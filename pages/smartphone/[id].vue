@@ -15,7 +15,7 @@
                         <h2 class="font-weight-black text-uppercase text-center text-grey-darken-4">{{ mobiles.brand }}
                             <span>{{
                                 mobiles.model
-                            }}</span>
+                                }}</span>
                         </h2>
 
                         <div class="border-b mb-3" />
@@ -462,8 +462,9 @@
 const route = useRoute()
 const { id } = route.params
 
-// const { data: mobiles } = await useAsyncData('mobiles', () => queryContent('_smartphone', 'apple').where({ id: id }).findOne())
-const { data: mobiles } = await useAsyncData('mobiles', () => queryContent('_smartphone').where({ id: id }).findOne())
+const { data: mobiles } = await useAsyncData('mobiles', () => queryContent('_smartphone').where({ id: id }).findOne(), {
+    watch: [id]
+})
 
 useContentHead(mobiles.value.header)
 </script>

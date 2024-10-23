@@ -12,7 +12,9 @@
 </template>
 
 <script setup>
-const { data: blogs } = await useAsyncData('blogs', () => queryContent('/_blogs').find())
+const { data: blogs } = await useAsyncData('blogs', () => queryContent('/_blogs').find(), {
+    lazy: true
+})
 
 useHead({
     title: 'SmartTech',

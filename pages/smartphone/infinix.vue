@@ -15,7 +15,9 @@
 </template>
 
 <script setup>
-const { data: infinix } = await useAsyncData('infinix', () => queryContent('_smartphone', 'infinix').find())
+const { data: infinix } = await useAsyncData('infinix', () => queryContent('_smartphone', 'infinix').find(), {
+    lazy: true
+})
 
 useContentHead(infinix.value[0].header)
 </script>
