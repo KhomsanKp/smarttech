@@ -1,0 +1,1 @@
+import{V as a}from"./BesTQnIN.js";import{f as r,B as c}from"./C8USoD5C.js";import"./BM3KLBbl.js";const n={__name:"BlogImage",props:["src","alt"],setup(t){return(e,o)=>(r(),c(a,{"aspect-ratio":16/9,src:t.src,alt:t.alt,"max-height":"320",cover:""},null,8,["src","alt"]))}};export{n as default};
