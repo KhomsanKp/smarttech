@@ -7,7 +7,7 @@
         <v-sheet>
             <v-row justify="center">
                 <v-col cols="12" md="4" class="d-flex justify-center">
-                    <v-img :src="mobiles.imageUrl" aspect-ratio="1" class="ma-3 w-50 h-100 " />
+                    <v-img :src="mobiles.imageUrl" aspect-ratio="1" max-height="600" />
                 </v-col>
 
                 <v-col cols="12" md="8">
@@ -15,7 +15,7 @@
                         <h2 class="font-weight-black text-uppercase text-center text-grey-darken-4">{{ mobiles.brand }}
                             <span>{{
                                 mobiles.model
-                                }}</span>
+                            }}</span>
                         </h2>
 
                         <div class="border-b mb-3" />
