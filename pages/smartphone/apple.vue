@@ -15,8 +15,6 @@
 </template>
 
 <script setup>
-import SmartphoneList from '~/components/SmartphoneList.vue';
-
 const { data: apple } = await useAsyncData('apple', () => queryContent('_smartphone', 'apple').find())
 
 useContentHead(apple.value[0].header)

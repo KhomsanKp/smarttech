@@ -15,8 +15,6 @@
 </template>
 
 <script setup>
-import SmartphoneList from '~/components/SmartphoneList.vue';
-
 const { data: infinix } = await useAsyncData('infinix', () => queryContent('_smartphone', 'infinix').find())
 
 useContentHead(infinix.value[0].header)

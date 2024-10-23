@@ -129,8 +129,6 @@
 </template>
 
 <script setup>
-import SmartphoneList from '~/components/SmartphoneList.vue';
-
 useHead({
     title: 'All smartphone',
     meta: [
@@ -151,5 +149,4 @@ const { data: infinix } = await useAsyncData('infinix', () => queryContent('_sma
 const { data: techno } = await useAsyncData('techno', () => queryContent('_smartphone', 'techno').find())
 const { data: vivo } = await useAsyncData('vivo', () => queryContent('_smartphone', 'vivo').find())
 const { data: oneplus } = await useAsyncData('oneplus', () => queryContent('_smartphone', 'oneplus').find())
-
 </script>

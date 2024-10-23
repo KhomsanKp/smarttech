@@ -13,8 +13,6 @@
 </template>
 
 <script setup>
-import BlogList from '~/components/BlogList.vue';
-
 useHead({
     title: 'Smartphone blog',
     meta: [

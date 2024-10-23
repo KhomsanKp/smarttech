@@ -15,8 +15,6 @@
 </template>
 
 <script setup>
-import SmartphoneList from '~/components/SmartphoneList.vue';
-
 const { data: redmi } = await useAsyncData('redmi', () => queryContent('_smartphone', 'redmi').find())
 
 useContentHead(redmi.value[0].header)
