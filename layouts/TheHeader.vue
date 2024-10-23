@@ -11,16 +11,6 @@
 
         <v-navigation-drawer color="amber-lighten-1" v-model="drawer"
             :location="$vuetify.display.mobile ? 'bottom' : undefined" temporary>
-            <!-- <v-list>
-                <v-list-item title="MDBlog" subtitle="The story of my life."
-                    class="text-amber-darken-1 border-b"></v-list-item>
-                <v-divider></v-divider>
-                <v-list-item to="/" link title="หน้าหลัก"></v-list-item>
-                <v-list-item to="/blog/tech" link title="เทคโนโลยี"></v-list-item>
-                <v-list-item to="/blog/pets" link title="สัตว์เลื้ยง"></v-list-item>
-                <v-list-item to="/blog/smartphone" link title="Smartphone"></v-list-item>
-                <v-list-item to="/about" link title="เกี่ยวกับเรา"></v-list-item>
-            </v-list> -->
 
             <v-list :opened="open" color="grey-darken-2">
                 <v-list-item to="/" prepend-icon="mdi-home" title="หน้าหลัก"></v-list-item>
