@@ -24,7 +24,7 @@
                                 </v-list-item>
                             </v-card>
 
-                            <p class="text-caption mt-2 ml-5 font-italic text-teal-lighten-1">
+                            <p class="text-caption mt-2 ml-5 font-italic text-amber-darken-1">
                                 author: {{ item.raw.author }}
                             </p>
 
@@ -35,7 +35,7 @@
                                     <div class="text-truncate text-black">{{ item.raw.createDate }}</div>
                                 </div>
 
-                                <v-btn :to="`/blog/${item.raw.id}`" color="teal" variant="tonal" class="text-none"
+                                <v-btn :to="`/blog/${item.raw.id}`" color="amber" variant="tonal" class="text-none"
                                     size="small" text="เพิ่มเติม">
                                 </v-btn>
                             </div>

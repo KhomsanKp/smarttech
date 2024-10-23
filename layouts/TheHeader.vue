@@ -4,7 +4,7 @@
             <v-app-bar-nav-icon variant="text" color="amber-lighten-2"
                 @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
-            <v-app-bar-title class="cursor-pointer ma-0 pa-0" @click="gotoHome">
+            <v-app-bar-title class="cursor-pointer" @click="gotoHome">
                 <v-img src="/brand/smart-tech.png" width="90" />
             </v-app-bar-title>
         </v-app-bar>

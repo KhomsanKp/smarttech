@@ -6,11 +6,7 @@
 
         <BlogList v-if="blogs.length > 0" :blogs-list="blogs" />
 
-        <v-container class="my-3">
-            <v-sheet>
-                <ContentDoc path="/advert/advert1" />
-            </v-sheet>
-        </v-container>
+
 
     </div>
 </template>
@@ -19,9 +15,9 @@
 const { data: blogs } = await useAsyncData('blogs', () => queryContent('/_blogs').find())
 
 useHead({
-    title: 'MDBblog',
+    title: 'SmartTech',
     meta: [
-        { name: 'title', content: 'MDBlog' },
+        { name: 'title', content: 'Smart Tech' },
         { name: 'description', content: 'MDBlog เว็บบล็อกไอที เทคโนโลบี สัตวเลี่้ยง ไลฟ์สไตส์ อื่นๆ' },
         { name: 'author', content: "Bird348" }
     ]

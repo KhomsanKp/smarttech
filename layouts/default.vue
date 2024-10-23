@@ -8,6 +8,14 @@
             </v-container>
         </v-main>
 
+        <div>
+            <v-container class="my-3 border">
+                <v-sheet>
+                    <ContentDoc path="/advert/advert1" />
+                </v-sheet>
+            </v-container>
+        </div>
+
         <TheFooter />
 
     </v-app>
