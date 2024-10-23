@@ -1,1 +1,0 @@
-import{V as a}from"./C-_1WiGr.js";import{f as r,B as c}from"./BTn5d4dX.js";import"./BVbCm290.js";const n={__name:"BlogImage",props:["src","alt"],setup(t){return(e,o)=>(r(),c(a,{"aspect-ratio":16/9,src:t.src,alt:t.alt,"max-height":"320",cover:""},null,8,["src","alt"]))}};export{n as default};
