@@ -129,14 +129,14 @@
 </template>
 
 <script setup>
-useHead({
-    title: 'All smartphone',
-    meta: [
-        { name: 'title', content: 'All Smartphone' },
-        { name: 'description', content: 'Smartphone apple samsung oppo vivo realme oneplus xiaomi redmi poco infinix techno' },
-        { name: 'author', content: "Bird348" }
-    ]
-})
+// useHead({
+//     title: 'All smartphone',
+//     meta: [
+//         { name: 'title', content: 'All Smartphone' },
+//         { name: 'description', content: 'Smartphone apple samsung oppo vivo realme oneplus xiaomi redmi poco infinix techno' },
+//         { name: 'author', content: "Bird348" }
+//     ]
+// })
 
 const { data: apple } = await useAsyncData('apple', () => queryContent('_smartphone', 'apple').find())
 const { data: samsung } = await useAsyncData('samsung', () => queryContent('_smartphone', 'samsung').find())

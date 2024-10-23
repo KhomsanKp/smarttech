@@ -17,5 +17,5 @@ V<template>
 <script setup>
 const { data: oneplus } = await useAsyncData('oneplus', () => queryContent('_smartphone', 'oneplus').find())
 
-useContentHead(oneplus.value[0].header)
+// useContentHead(oneplus.value[0].header)
 </script>redmi

@@ -17,5 +17,5 @@
 <script setup>
 const { data: poco } = await useAsyncData('poco', () => queryContent('_smartphone', 'poco').find())
 
-useContentHead(poco.value[0].header)
+// useContentHead(poco.value[0].header)
 </script>
