@@ -17,5 +17,5 @@
 <script setup>
 const { data: vivo } = await useAsyncData('vivo', () => queryContent('_smartphone', 'vivo').find())
 
-// useContentHead(vivo.value[0].header)
+useContentHead(vivo.value[0].header)
 </script>redmi

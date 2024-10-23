@@ -3,7 +3,7 @@
     <template v-slot:default="{ items }">
       <v-row dense>
         <v-col v-for="(item, i) in items" :key="i" cols="auto" md="3">
-          <v-card class="pb-3" border flat :to="{ name: 'smartphone-id', params: { id: item.raw._path } }">
+          <v-card class="pb-3" border flat :to="{ name: 'smartphone-id', params: { id: item.raw.id } }">
             <v-img :src="item.raw.imageUrl" aspect-ratio="1" />
 
             <v-list-item :subtitle="item.raw.model">

@@ -17,5 +17,5 @@
 <script setup>
 const { data: xiaomi } = await useAsyncData('xiaomi', () => queryContent('_smartphone', 'xiaomi').find())
 
-// useContentHead(xiaomi.value[0].header)
+useContentHead(xiaomi.value[0].header)
 </script>

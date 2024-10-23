@@ -462,7 +462,8 @@
 const route = useRoute()
 const { id } = route.params
 
-const { data: mobiles } = await useAsyncData('mobiles', () => queryContent(id).findOne())
+// const { data: mobiles } = await useAsyncData('mobiles', () => queryContent('_smartphone', 'apple').where({ id: id }).findOne())
+const { data: mobiles } = await useAsyncData('mobiles', () => queryContent('_smartphone').where({ id: id }).findOne())
 
-// useContentHead(mobiles.value.header)
+useContentHead(mobiles.value.header)
 </script>

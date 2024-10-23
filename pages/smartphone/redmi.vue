@@ -17,5 +17,5 @@
 <script setup>
 const { data: redmi } = await useAsyncData('redmi', () => queryContent('_smartphone', 'redmi').find())
 
-// useContentHead(redmi.value[0].header)
+useContentHead(redmi.value[0].header)
 </script>redmi

@@ -17,5 +17,5 @@ V<template>
 <script setup>
 const { data: oppo } = await useAsyncData('oppo', () => queryContent('_smartphone', 'oppo').find())
 
-// useContentHead(oppo.value[0].header)
+useContentHead(oppo.value[0].header)
 </script>

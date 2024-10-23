@@ -17,5 +17,5 @@
 <script setup>
 const { data: realme } = await useAsyncData('realme', () => queryContent('_smartphone', 'realme').find())
 
-// useContentHead(realme.value[0].header)
+useContentHead(realme.value[0].header)
 </script>
