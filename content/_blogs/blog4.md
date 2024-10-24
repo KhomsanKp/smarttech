@@ -44,7 +44,7 @@ author: Khomsan
   :::
 ::
 
-::blog-link
+::blog-link{.my-3}
 ---
 class: my-3
 link: https://www.gsmarena.com/realme_gt7_pro_gets_unboxed_underwater_just_as_reservations_start-news-64974.php
