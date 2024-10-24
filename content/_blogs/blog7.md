@@ -19,7 +19,7 @@ head:
     - name: copyright
       content: © 2024 mdblog
 id: blog_7
-imageUrl: /images/blog_6-1.jpg
+imageUrl: /images/blog_7-1.jpg
 category: smartphone
 createDate: 24 ตุลาคม 2567
 author: BiRD348
@@ -39,13 +39,7 @@ author: BiRD348
 ในระหว่างนี้ เราจะได้ชมภาพเรนเดอร์คุณภาพสูงจาก Tech Blogger อย่าง Kartikey Singh บน X Xiaomi 15 Pro มีความบาง 8.35 มม. และมีน้ำหนัก 213 กรัม ซึ่งเบากว่ารุ่น 14 Pro ถึง 10 กรัม
 ::
 
-:blog-image{.my-5 alt="Xiaomi 15" src="/images/blog_7-2.jpg"}
-
-:blog-image{.my-5 alt="Xiaomi 15" src="/images/blog_7-3.jpg"}
-
-:blog-image{.my-5 alt="Xiaomi 15" src="/images/blog_7-4.jpg"}
-
-:blog-image{.my-5 alt="Xiaomi 15" src="/images/blog_7-5.jpg"}
+:blog-image{.my-5 alt="Xiaomi 15" src="/images/blog_7-2.jpg"}\:blog-image{.my-5 alt="Xiaomi 15" src="/images/blog\_7-3.jpg"}\:blog-image{.my-5 alt="Xiaomi 15" src="/images/blog\_7-4.jpg"}\:blog-image{.my-5 alt="Xiaomi 15" src="/images/blog\_7-5.jpg"}
 
 ::blog-sheet{.my-3}
 ในที่สุด ซีรีส์ 15 จะเป็นเรือธงรุ่นแรกของ Xiaomi ที่ใช้เครื่องสแกนลายนิ้วมือแบบอัลตราโซนิกแทนแบบออปติคัล เทคโนโลยีอัลตราโซนิกโดยทั่วไปจะเร็วกว่าและแม่นยำกว่า และไม่จำเป็นต้องส่องนิ้วเพื่ออ่านข้อมูล ซึ่งเหมาะมากในที่มืด
