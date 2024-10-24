@@ -10,7 +10,9 @@
 const route = useRoute()
 const { id } = route.params
 
-const { data: blog } = await useAsyncData('blog', () => queryContent('_blogs').where({ id: id }).findOne())
+const { data: blog } = await useAsyncData(`blog:${id}`, () => queryContent('_blogs').where({ id: id }).findOne(), {
+    watch: [id]
+})
 
 useContentHead(blog)
 </script>

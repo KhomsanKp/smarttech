@@ -4,7 +4,7 @@
             <h1 class="text-h5 font-weight-bold text-grey-darken-1 pl-6 py-3">News top 10</h1>
         </v-sheet>
 
-        <BlogList v-if="blogs.length > 0" :blogs-list="blogs" />
+        <BlogList :blogs-list="blogs" />
 
 
 

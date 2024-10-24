@@ -1,3 +1,4 @@
+import { SmartphoneList } from '../../.nuxt/components';
 <template>
     <div>
         <v-sheet class="elevation-1 mt-5 mb-3">
@@ -10,9 +11,6 @@
 
             <SmartphoneList :item-list="smartphone.apple" />
 
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
         </v-card>
 
         <v-card variant="text">
@@ -23,9 +21,6 @@
 
             <SmartphoneList :item-list="smartphone.samsung" />
 
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
         </v-card>
 
         <v-card variant="text">
@@ -36,9 +31,6 @@
 
             <SmartphoneList :item-list="smartphone.xiaomi" />
 
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
         </v-card>
 
         <v-card variant="text">
@@ -48,9 +40,7 @@
             </h2>
 
             <SmartphoneList :item-list="smartphone.redmi" />
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
+
         </v-card>
 
         <v-card variant="text">
@@ -60,9 +50,7 @@
             </h2>
 
             <SmartphoneList :item-list="smartphone.poco" />
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
+
         </v-card>
 
         <v-card variant="text">
@@ -72,9 +60,7 @@
             </h2>
 
             <SmartphoneList :item-list="smartphone.oppo" />
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
+
         </v-card>
 
         <v-card variant="text">
@@ -84,9 +70,7 @@
             </h2>
 
             <SmartphoneList :item-list="smartphone.vivo" />
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
+
         </v-card>
 
         <v-card variant="text">
@@ -96,9 +80,7 @@
             </h2>
 
             <SmartphoneList :item-list="smartphone.realme" />
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
+
         </v-card>
 
         <v-card variant="text">
@@ -108,9 +90,7 @@
             </h2>
 
             <SmartphoneList :item-list="smartphone.oneplus" />
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
+
         </v-card>
 
         <v-card variant="text">
@@ -119,9 +99,7 @@
             </h2>
 
             <SmartphoneList :item-list="smartphone.infinix" />
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
+
         </v-card>
 
         <v-card variant="text">
@@ -131,9 +109,7 @@
             </h2>
 
             <SmartphoneList :item-list="smartphone.techno" />
-            <!-- <v-sheet v-else class="w-100 py-10 text-center bg-amber-lighten-5 rounded-lg">
-                <p>No documents</p>
-            </v-sheet> -->
+
         </v-card>
 
     </div>
@@ -149,32 +125,21 @@ useHead({
     ]
 })
 
-// const { data: apple } = await useAsyncData('apple', () => queryContent('_smartphone', 'apple').find())
-// const { data: samsung } = await useAsyncData('samsung', () => queryContent('_smartphone', 'samsung').find())
-// const { data: xiaomi } = await useAsyncData('xiaomi', () => queryContent('_smartphone', 'xiaomi').find())
-// const { data: redmi } = await useAsyncData('redmi', () => queryContent('_smartphone', 'redmi').find())
-// const { data: poco } = await useAsyncData('poco', () => queryContent('_smartphone', 'poco').find())
-// const { data: oppo } = await useAsyncData('oppo', () => queryContent('_smartphone', 'oppo').find())
-// const { data: realme } = await useAsyncData('realme', () => queryContent('_smartphone', 'realme').find())
-// const { data: infinix } = await useAsyncData('infinix', () => queryContent('_smartphone', 'infinix').find())
-// const { data: techno } = await useAsyncData('techno', () => queryContent('_smartphone', 'techno').find())
-// const { data: vivo } = await useAsyncData('vivo', () => queryContent('_smartphone', 'vivo').find())
-// const { data: oneplus } = await useAsyncData('oneplus', () => queryContent('_smartphone', 'oneplus').find())
 
-const { data: test } = await useAsyncData('test', () => queryContent('_smartphone').find())
+const { data: smartphoneList } = await useAsyncData('smartphone', () => queryContent('_smartphone').find())
 
 const smartphone = computed(() => {
-    const apple = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'apple')
-    const samsung = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'samsung')
-    const xiaomi = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'xiaomi')
-    const redmi = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'redmi')
-    const poco = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'poco')
-    const oppo = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'oppo')
-    const vivo = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'vivo')
-    const realme = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'realme')
-    const oneplus = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'oneplus')
-    const infinix = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'infinix')
-    const techno = test.value.filter((mobile) => mobile.brand.toLowerCase() === 'techno')
+    const apple = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'apple')
+    const samsung = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'samsung')
+    const xiaomi = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'xiaomi')
+    const redmi = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'redmi')
+    const poco = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'poco')
+    const oppo = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'oppo')
+    const vivo = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'vivo')
+    const realme = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'realme')
+    const oneplus = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'oneplus')
+    const infinix = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'infinix')
+    const techno = smartphoneList.value.filter((mobile) => mobile.brand.toLowerCase() === 'techno')
 
     return { apple, samsung, xiaomi, redmi, poco, oppo, vivo, realme, oneplus, infinix, techno };
 })
